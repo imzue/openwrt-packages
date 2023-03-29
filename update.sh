@@ -7,6 +7,9 @@ git clone --depth 1 https://github.com/Hyy2001X/AutoBuild-Packages && mv -n Auto
 git clone --depth 1 https://github.com/zzsj0928/luci-app-pushbot
 git clone --depth 1 https://github.com/sbwml/luci-app-mosdns -b v5 package_mosdns && mv -n package_mosdns/luci-app-mosdns ./; mv -n package_mosdns/mosdns ./; mv -n package_mosdns/v2dat ./; rm -rf package_mosdns
 git clone --depth 1 https://github.com/sbwml/v2ray-geodata
+git clone --depth 1 https://github.com/linkease/istore && mv -n istore/luci/* ./; rm -rf istore
+git clone --depth 1 https://github.com/linkease/nas-packages && mv -n nas-packages/network/services/ddnsto ./; rm -rf nas-packages
+git clone --depth 1 https://github.com/linkease/nas-packages-luci && mv -n nas-packages-luci/luci/luci-app-ddnsto ./; rm -rf nas-packages-luci
 
 sed -i.bak -e "s#option binpath '/tmp/AdGuardHome/AdGuardHome'#option binpath '/usr/bin/AdGuardHome'#g" -e "s#option workdir '/usr/bin/AdGuardHome'#option workdir '/etc/AdGuardHome'#g" luci-app-adguardhome/root/etc/config/AdGuardHome
 rm luci-app-adguardhome/root/etc/config/AdGuardHome.bak
