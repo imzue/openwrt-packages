@@ -5,8 +5,6 @@ rm -rf `find ./* -maxdepth 0 -type d` >/dev/null 2>&1
 
 git clone --depth 1 https://github.com/Hyy2001X/AutoBuild-Packages && mv -n AutoBuild-Packages/luci-app-adguardhome ./; rm -rf AutoBuild-Packages
 git clone --depth 1 https://github.com/zzsj0928/luci-app-pushbot
-git clone --depth 1 https://github.com/sbwml/luci-app-mosdns -b v5 package_mosdns && mv -n package_mosdns/luci-app-mosdns ./; mv -n package_mosdns/mosdns ./; mv -n package_mosdns/v2dat ./; rm -rf package_mosdns
-git clone --depth 1 https://github.com/sbwml/v2ray-geodata
 git clone --depth 1 https://github.com/linkease/istore && mv -n istore/luci/* ./; rm -rf istore
 git clone --depth 1 https://github.com/linkease/nas-packages && mv -n nas-packages/network/services/ddnsto ./; rm -rf nas-packages
 git clone --depth 1 https://github.com/linkease/nas-packages-luci && mv -n nas-packages-luci/luci/luci-app-ddnsto ./; rm -rf nas-packages-luci
