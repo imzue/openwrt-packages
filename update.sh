@@ -1,6 +1,6 @@
 #!/bin/bash
 
-git rm -r --cache * >/dev/null 2>&1 &
+# git rm -r --cache * >/dev/null 2>&1 &
 rm -rf `find ./* -maxdepth 0 -type d` >/dev/null 2>&1
 
 git clone --depth 1 https://github.com/Hyy2001X/AutoBuild-Packages && mv -n AutoBuild-Packages/luci-app-adguardhome ./; rm -rf AutoBuild-Packages
